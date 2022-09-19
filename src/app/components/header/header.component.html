@@ -1,0 +1,169 @@
+<div class="vs-header">
+  <div class="header" [ngClass]="{ 'small-header': isHeaderSmall }">
+    <div class="logo">
+      <vs-button [routerLink]="['/']" type="link">
+        <app-logo [ngClass]="{ 'small-logo': isHeaderSmall }"></app-logo>
+        <app-text [ngClass]="{ 'small-caption': isHeaderSmall }"
+          >VOLATILE SOLUTIONS</app-text
+        >
+      </vs-button>
+    </div>
+    <div class="navbar">
+      <nav>
+        <ul (window:resize)="checkSizeWindow($event)">
+          <li
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <vs-button type="link" [routerLink]="['/']">{{
+              "HEADER.HOME" | translate
+            }}</vs-button>
+          </li>
+          <li routerLinkActive="active">
+            <vs-button type="link" [routerLink]="['/about']">{{
+              "HEADER.ABOUT" | translate
+            }}</vs-button>
+          </li>
+          <li routerLinkActive="active">
+            <vs-button type="link" [routerLink]="['/our-services']">{{
+              "HEADER.OUR_SERVICES" | translate
+            }}</vs-button>
+          </li>
+          <li routerLinkActive="active">
+            <vs-button type="link" [routerLink]="['/dedicated-teams']">{{
+              "HEADER.TEAMS" | translate
+            }}</vs-button>
+          </li>
+          <li routerLinkActive="active">
+            <vs-button type="link" [routerLink]="['/contact-us']">{{
+              "HEADER.CONTACT" | translate
+            }}</vs-button>
+          </li>
+          <li routerLinkActive="active">
+            <select
+              [(ngModel)]="currentLanguage"
+              class="languageSelect"
+              #langselect
+              (change)="changeLang(langselect.value)"
+            >
+              <option *ngFor="let lang of appLanguages" [value]="lang.lang">
+                {{ lang.displayLang }}
+              </option>
+            </select>
+          </li>
+          <li class="theme-icon">
+            <app-theme-logo
+              (click)="changeTheme()"
+              [value]="currentTheme"
+            ></app-theme-logo>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile version Header -->
+
+<nav role="navigation" id="navigation">
+  <div id="menuToggle">
+    <input
+      #switchMenu
+      (click)="openSidebar()"
+      type="checkbox"
+      [checked]="isSidebarOpened ? true : false"
+    />
+
+    <app-text></app-text>
+    <app-text></app-text>
+    <app-text></app-text>
+  </div>
+
+  <div class="logo">
+    <vs-button
+      [routerLink]="['/']"
+      type="link"
+      (click)="isSidebarOpened = false"
+    >
+      <app-logo></app-logo>
+      <app-text>VOLATILE SOLUTIONS</app-text>
+    </vs-button>
+  </div>
+</nav>
+
+<ul id="menu" [ngClass]="{ opened: isSidebarOpened }">
+  <div class="sidebarBlock">
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <vs-button type="link" [routerLink]="['/']" (click)="openSidebar()">{{
+        "HEADER.HOME" | translate
+      }}</vs-button>
+    </li>
+    <li routerLinkActive="active">
+      <vs-button
+        type="link"
+        [routerLink]="['/about']"
+        (click)="openSidebar()"
+        >{{ "HEADER.ABOUT" | translate }}</vs-button
+      >
+    </li>
+    <li routerLinkActive="active">
+      <vs-button
+        type="link"
+        [routerLink]="['/our-services']"
+        (click)="openSidebar()"
+        >{{ "HEADER.OUR_SERVICES" | translate }}</vs-button
+      >
+    </li>
+    <li routerLinkActive="active">
+      <vs-button
+        type="link"
+        [routerLink]="['/dedicated-teams']"
+        (click)="openSidebar()"
+        >{{ "HEADER.TEAMS" | translate }}</vs-button
+      >
+    </li>
+    <li routerLinkActive="active">
+      <vs-button
+        type="link"
+        [routerLink]="['/contact-us']"
+        (click)="openSidebar()"
+        >{{ "HEADER.CONTACT" | translate }}</vs-button
+      >
+    </li>
+    <li routerLinkActive="active">
+      <div class="settingsRow">
+        <select
+          [(ngModel)]="currentLanguage"
+          class="languageSelect languageSelectMobile"
+          #langselectmobile
+          (change)="changeLang(langselectmobile.value)"
+        >
+          <option *ngFor="let lang of appLanguages" [value]="lang.lang">
+            {{ lang.displayLang }}
+          </option>
+        </select>
+        <app-theme-logo
+          (click)="changeTheme()"
+          [value]="currentTheme"
+        ></app-theme-logo>
+      </div>
+    </li>
+  </div>
+</ul>
+
+<!-- Linear-gradient for app logo -->
+
+<svg class="svg-color-block">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop
+        offset="0%"
+        style="stop-color: var(--header-logo-color-top); stop-opacity: 1"
+      />
+      <stop
+        offset="100%"
+        style="stop-color: var(--header-logo-color-bottom); stop-opacity: 1"
+      />
+    </linearGradient>
+  </defs>
+</svg>

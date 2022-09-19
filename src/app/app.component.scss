@@ -1,0 +1,74 @@
+@import "global.scss";
+
+* {
+  scroll-behavior: smooth;
+}
+
+.app {
+  padding: 150px 0;
+  background-color: var(--main-color);
+}
+
+@media #{$media-laptop} {
+  #button {
+    display: none !important;
+  }
+
+  .app {
+    padding: 50px 0;
+  }
+}
+
+//Go to top button styles
+
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to left,
+    var(--secondary-gradient-left-color),
+    var(--secondary-gradient-right-color)
+  );
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+
+  .arrow-top {
+    font-size: 26px;
+    color: var(--main-color);
+    transition: all 0.1s;
+  }
+}
+
+#button::after {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  .arrow-top {
+    font-size: 30px;
+  }
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}

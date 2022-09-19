@@ -1,0 +1,47 @@
+<div class="main-banner">
+  <app-container class="banner-content">
+    <div class="banner-intro">
+      <div class="banner-headline">
+        <app-title>
+          {{ "BANNER.HEADLINE" | translate }}
+        </app-title>
+      </div>
+      <div class="banner-body">
+        <div class="banner-left">
+          <div class="banner-text">
+            <app-text-secondary>
+              {{ "BANNER.PARAGRAPH" | translate }}
+            </app-text-secondary>
+            <app-button
+              class="seeMoreButton"
+              type="link"
+              [routerLink]="['/about']"
+              >{{ "BANNER.LINK" | translate }}</app-button
+            >
+          </div>
+          <div class="achievements">
+            <app-achievement-badge
+              stat="1+"
+              [description]="'BANNER.YEARS_IN_BUSINESS' | translate"
+            ></app-achievement-badge>
+            <app-achievement-badge
+              stat="500+"
+              [description]="'BANNER.SOLUTIONS_DELIVERED' | translate"
+            ></app-achievement-badge>
+            <app-achievement-badge
+              stat="10+"
+              [description]="'BANNER.COUNTRIES_OF_CUSTOMERS' | translate"
+            ></app-achievement-badge>
+            <app-achievement-badge
+              stat="$500K +"
+              [description]="'BANNER.BUSINESS_DELIVERED' | translate"
+            ></app-achievement-badge>
+          </div>
+        </div>
+        <div class="banner-image">
+          <app-img path="/assets/images" name="banner-image.svg"></app-img>
+        </div>
+      </div>
+    </div>
+  </app-container>
+</div>

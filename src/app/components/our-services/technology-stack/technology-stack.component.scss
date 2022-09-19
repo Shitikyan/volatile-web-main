@@ -1,0 +1,22 @@
+@import 'global';
+
+.description {
+  padding-bottom: 40px;
+}
+
+.tech-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  row-gap: 15px;
+}
+
+.core-technologies {
+  padding-bottom: 10px;
+}
+
+@media #{$media-laptop} {
+  .description {
+    padding-bottom: 20px;
+  }
+}

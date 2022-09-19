@@ -1,0 +1,27 @@
+@import "global";
+
+.question-answer {
+  .question-answer-item {
+    display: grid;
+    row-gap: get-space("md");
+  }
+
+  .title {
+    max-width: 100%;
+    font-weight: bold;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+}
+
+@media #{$media-laptop} {
+  .question-answer .question-answer-item {
+    row-gap: get-space("sm");
+  }
+
+  app-text-secondary {
+    font-size: get-font('xs');  
+  }
+}

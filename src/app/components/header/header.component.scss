@@ -1,0 +1,323 @@
+@import "global";
+
+.vs-header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--main-gradient-left-color),
+    var(--main-gradient-right-color)
+  );
+  display: flex;
+  justify-content: center;
+
+  .header {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s;
+
+    .navbar {
+      ul {
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 40px;
+        li {
+          list-style-type: none;
+          transition: all 0.1s ease-in-out;
+          position: relative;
+          display: flex;
+          align-items: center;
+
+          ::ng-deep .vs-button button {
+            color: var(--main-color);
+            font-weight: bold;
+          }
+
+          app-theme-logo {
+            fill: var(--theme-icon-button);
+            stroke: var(--theme-icon-button);
+          }
+
+          .languageSelect {
+            border-left: 2px solid var(--main-color);
+          }
+
+          &:before,
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            width: 0px;
+            height: 2px;
+            margin: 2px 0 0;
+            transition: all 0.1s ease-in-out;
+            transition-duration: 0.1s;
+            opacity: 0;
+            background-color: var(--main-color);
+          }
+          &:before {
+            left: 50%;
+          }
+          &:after {
+            right: 50%;
+          }
+          &:hover {
+            &:before,
+            &:after {
+              width: 50%;
+              opacity: 1;
+            }
+          }
+        }
+        li.active {
+          &:before,
+          &:after {
+            width: 50%;
+            opacity: 1;
+          }
+        }
+        li.theme-icon {
+          &:before,
+          &:after {
+            background-color: var(--theme-icon-button);
+          }
+        }
+      }
+    }
+  }
+}
+
+.languageSelect {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  color: var(--main-color);
+
+  option {
+    font-weight: 600;
+    background-color: var(--main-gradient-right-color);
+  }
+}
+
+.small-header {
+  height: 70px !important;
+}
+
+.small-logo {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.small-caption {
+  font-size: 14px !important;
+}
+
+.logo {
+  margin-right: 20px;
+  vs-button {
+    app-logo {
+      width: 80px;
+      height: 80px;
+    }
+    app-text {
+      color: var(--main-color);
+      width: 100px;
+      font-weight: bold;
+    }
+  }
+}
+
+// Mobile header style
+
+#navigation {
+  display: none;
+  width: 100%;
+  visibility: hidden;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    var(--main-gradient-left-color),
+    var(--main-gradient-right-color)
+  );
+
+  .logo-small {
+    img {
+      width: 60px;
+    }
+  }
+
+  #menuToggle {
+    display: block;
+    position: relative;
+    width: 100%;
+    left: 20px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+
+    input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 2;
+      -webkit-touch-callout: none;
+    }
+
+    app-text {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: var(--main-color);
+      border-radius: 3px;
+      z-index: 1;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+
+      &:first-child {
+        transform-origin: 0% 0%;
+      }
+
+      &:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
+    }
+
+    input:checked ~ app-text {
+      opacity: 1;
+      transform: rotate(-45deg) translate(-1px, -2px);
+      background: var(--main-color);
+
+      &:nth-last-child(2) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+
+      &:nth-last-child(3) {
+        transform: rotate(45deg) translate(0, -1px);
+      }
+    }
+  }
+
+  #menuToggle input:checked ~ body {
+    overflow: hidden;
+  }
+}
+
+.opened {
+  transform: none !important;
+}
+
+::ng-deep {
+  .disabledOverflow {
+    overflow: hidden;
+  }
+}
+
+.sidebarBlock {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 3rem;
+}
+
+.svg-color-block {
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+
+#menu {
+  width: 100%;
+  height: 88vh;
+  position: absolute;
+  z-index: 1;
+  padding: 0 50px 0 50px;
+  margin: 0;
+  background: linear-gradient(
+    to right,
+    var(--main-gradient-left-color),
+    var(--main-gradient-right-color)
+  );
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+  li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 22px;
+    ::ng-deep {
+      .p-button-link.p-button {
+        color: var(--main-color);
+      }
+    }
+  }
+
+  .settingsRow {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  ::ng-deep {
+    .active {
+      border-bottom: 1px solid var(--main-color);
+    }
+  }
+}
+
+@media #{$media-laptop-l} {
+  .vs-header .header .navbar ul {
+    grid-column-gap: 25px;
+  }
+  .vs-header .header {
+    width: 90%;
+  }
+}
+
+@media #{$media-laptop} {
+  app-logo {
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  app-text {
+    font-size: 12px;
+  }
+
+  .vs-header {
+    display: none;
+    visibility: hidden;
+  }
+
+  #navigation {
+    height: 12vh;
+    display: flex;
+    visibility: visible;
+  }
+}
+
+@media #{$media-mobile-l} {
+  app-text {
+    display: none;
+  }
+}

@@ -1,0 +1,84 @@
+<form
+  class="contact-us-form"
+  (ngSubmit)="submit(myForm, $event)"
+  #myForm="ngForm"
+>
+  <vs-input-text
+    [(ngModel)]="firstName"
+    [label]="'CONTACT_US.FIRST_NAME' | translate"
+    [validators]="[validator.required(), validator.minLength(3)]"
+    class="contact-us-field-item"
+    ngDefaultControl
+    name="name"
+    required
+  >
+  </vs-input-text>
+
+  <vs-input-text
+    [(ngModel)]="email"
+    [label]="'CONTACT_US.EMAIL' | translate"
+    [validators]="[validator.required(), validator.email()]"
+    class="contact-us-field-item"
+    ngDefaultControl
+    name="email"
+    required
+  >
+  </vs-input-text>
+
+  <vs-input-text
+    [(ngModel)]="phone"
+    [label]="'CONTACT_US.PHONE' | translate"
+    [validators]="[
+      validator.pattern('[+]{0,1}[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*'),
+      validator.required()
+    ]"
+    class="contact-us-field-item"
+    ngDefaultControl
+    name="phone"
+    required
+  >
+  </vs-input-text>
+
+  <vs-input-text
+    [(ngModel)]="company"
+    [label]="'CONTACT_US.COMPANY' | translate"
+    [validators]="[validator.required()]"
+    class="contact-us-field-item"
+    ngDefaultControl
+    name="company"
+    required
+  >
+  </vs-input-text>
+
+  <vs-input-text
+    [(ngModel)]="subject"
+    [label]="'CONTACT_US.SUBJECT' | translate"
+    [validators]="[validator.required()]"
+    class="contact-us-field-item"
+    ngDefaultControl
+    name="subject"
+    required
+  >
+  </vs-input-text>
+
+  <vs-input-text-area
+    [(ngModel)]="message"
+    [label]="'CONTACT_US.MESSAGE' | translate"
+    [validators]="[validator.required()]"
+    class="contact-us-field-item"
+    [autoResize]="true"
+    ngDefaultControl
+    name="message"
+    required
+  >
+  </vs-input-text-area>
+
+  <div class="submit-btn-block">
+    <app-button
+      [submit]="true"
+      class="submit-form-button"
+      [disabled]="myForm.valid ? false : true"
+      >{{ "CONTACT_US.SUBMIT" | translate }}</app-button
+    >
+  </div>
+</form>

@@ -1,0 +1,41 @@
+@import "global";
+
+.number {
+  font-size: 40px;
+  color: var(--order-number);
+}
+
+.textContaier {
+  padding: 10px 0 0 20px;
+}
+
+.card-mobile {
+  display: none;
+  grid-row-gap: get-space("sm");
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-column-gap: get-space("sm");
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+}
+
+@media #{$media-laptop} {
+  .card {
+    display: none;
+  }
+  .card-mobile {
+    display: grid;
+  }
+  .caption {
+    margin-bottom: 0;
+  }
+  app-text-secondary {
+    font-size: get-font("xs");
+  }
+}

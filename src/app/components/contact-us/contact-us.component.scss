@@ -1,0 +1,79 @@
+@import "global";
+
+:host {
+  width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+
+    ::ng-deep {
+      input-validation {
+        display: none;
+      }
+
+      vs-input-text,
+      vs-input-text-area {
+        width: 60%;
+
+        textarea {
+          color: var(--input-color);
+          border-bottom: 1px solid var(--input-color);
+          background: var(--main-color);
+        }
+        .contact-us-field-item {
+          border-radius: 0;
+          border: none;
+          box-shadow: none;
+          color: var(--input-color);
+          border-bottom: 1px solid var(--input-color);
+          background: var(--main-color);
+        }
+        label {
+          color: var(--input-color);
+        }
+        .contact-us-field-item.ng-invalid {
+          border-bottom: 1px solid #a80000;
+        }
+        .p-inputtextarea {
+          border-radius: 0;
+        }
+      }
+
+      input,
+      textarea {
+        width: 100%;
+      }
+      .submit-btn-block {
+        display: flex;
+        width: 60%;
+        align-items: start;
+        .submit-form-button .p-button.p-component {
+          text-transform: uppercase;
+          padding: get-space("md") get-space("lg");
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$media-laptop} {
+  :host {
+    form {
+      ::ng-deep {
+        vs-input-text,
+        vs-input-text-area {
+          width: 100% !important;
+        }
+
+        input,
+        textarea {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

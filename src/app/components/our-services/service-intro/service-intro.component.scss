@@ -1,0 +1,16 @@
+.service-intro-btn ::ng-deep button {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--button-left-color),
+    var(--button-right-color)
+  ) !important;
+}
+
+::ng-deep .read-more-btn .p-button {
+  text-transform: uppercase;
+}
+
+.arrow-down-icon {
+  margin-left: get-space("sm");
+}

@@ -1,0 +1,135 @@
+{
+  "HEADER": {
+    "HOME": "Գլխավոր",
+    "ABOUT": "Մեր մասին",
+    "OUR_SERVICES": "Մեր ծառայությունները",
+    "TEAMS": "Թիմ",
+    "STUDIES": "Օրինակներ",
+    "CAREER": "Կարիերա",
+    "CONTACT": "Կապ մեզ հետ"
+  },
+  "BANNER": {
+    "HEADLINE": "Հայերեն երկար տեքստ անիմաստ դեռևս, բայց հետագայում կունենա իմաստ վստահ եմ․․․ՄԵԾ ԻՄԱՍՏ․․",
+    "PARAGRAPH": "Հայերեն երկար տեքստ անիմաստ դեռևս, բայց հետագայում կունենա իմաստ վստահ եմ․․․Միքիչ փոքր․․",
+    "LINK": "ՏԵՍՆԵԼ ԱՎԵԼԻՆ VOLATILE-Ի ՄԱՍԻՆ",
+    "YEARS_IN_BUSINESS": "ԱՇԽԱՏԱՆՔԱՅԻՆ ՓՈՐՁԸ",
+    "SOLUTIONS_DELIVERED": "ԻՐԱԿԱՆԱՑՎԱԾ ԾՐԱԳՐԵՐԸ",
+    "COUNTRIES_OF_CUSTOMERS": "ՀԱՃԱԽՈՐԴՆԵՐԻ ԵՐԿՐՆԵՐԸ",
+    "BUSINESS_DELIVERED": "ԱՎԱՐՏԱԾ ԱՇԽԱՏԱՆՔՆԵՐԸ"
+  },
+  "FOOTER": {
+    "NAME": "Volatile Solutions",
+    "ABOUT_OFFICE": "Full-stack ծրագրավորոգների թիմ է, որը իրականացնում է ծառայություն ողջ աշխարհում",
+    "COMPANY": {
+      "COMPANY": "Ընկերություն",
+      "COUNTRY": "Երևան, Հայաստան",
+      "STREET": "Անտառային 158"
+    },
+    "WEBSITE": {
+      "WEBSITE": "Վեբ կայք"
+    },
+    "FINDUS": {
+      "TITLE": "Գտեք Մեզ",
+      "STREET": "Անտառային 31",
+      "COUNTRY": "Երևան, Հայաստան"
+    },
+    "GIT": {
+      "GET_IN_TOUCH": "Կապ հաստատեք մեզ հետ",
+      "SEND_US": "Ուղղարկեք մեզ հաղորդագրություն"
+    },
+    "RIGHTS": {
+      "RIGHTS_RESERVED": "© 2020 Volatile Solutions ՍՊԸ. Բոլոր իրավունքները պաշտպանված են",
+      "PRIVACY": "Գաղտնիության քաղաքականություն",
+      "SITEMAP": "Կայքի քարտեզ"
+    }
+  },
+  "OUR_SERVICES": {
+    "TITLE": "Մեր ծառայությունները",
+    "DESCRIPTION": "Դուք կարող եք ներառել մեր թիմն այնպես ինչպես Ձեզ հարմար է",
+    "CUSTOM_SOFTWARE_DEVELOPMENT": "Custom Software Development",
+    "CUSTOM_SOFTWARE_DEVELOPMENT_DESCRIPTION": "We build scalable high-performance web development solutions from scratch.",
+    "DEDICATED_DEVELOPMENT_TEAM": "Dedicated Development Team",
+    "DEDICATED_DEVELOPMENT_TEAM_DESCRIPTION": "We provide you with an agile team of web development specialists that integrate well with you process.",
+    "PAGE_DESCRIPTION": "We build complete solutions from an idea to the final product. Every project we undertake, due to its uniqueness, is carefully analyzed and planned to ensure it's delivered on time and on budget. We have a proven track of reliability in three core service types.",
+    "FRONTEND_DEVELOPMENT": "Frontend Development",
+    "BACKEND_DEVELOPMENT": "Backend Development",
+    "DESIGN": "Design",
+    "OUR_TECHNOLOGY_STACK": "Our Technology Stack",
+    "OUR_TECHNOLOGY_STACK_DESCRIPTION": "State-of-the-art frameworks and a carefully selected set of tools is what constitutes the backbone of our daily operations.",
+    "CORE_TECHNOLOGIES": "Core Technologies"
+  },
+  "COMMON": {
+    "READ_MORE": "Read more",
+    "LEARN_MORE": "Learn more",
+    "REQUIRED": "Լրացրեք այս պարտադիր դաշտը",
+    "EMAIL": "Էլ.փոստը պետք է ճիշտ ձևաչափված լինի"
+  },
+  "CONTACT_US": {
+    "TITLE": "Կապ մեր մասնագետների հետ",
+    "TITLE_DESCRIPTION": "Contact us to make your business greater!",
+    "FIRST_NAME": "Անուն *",
+    "LAST_NAME": "Ազգանուն *",
+    "EMAIL": "Էլ․ հասցե *",
+    "PHONE": "Հեռ․ *",
+    "COMPANY": "Ընկերություն *",
+    "SUBJECT": "Առարկա *",
+    "MESSAGE": "Հաղորդագրություն *",
+    "SUBMIT": "Հաստատել"
+  },
+  "TECHNOLOGY_STACK": {
+    "FRONTEND": "Frontend",
+    "FRONTEND_DESCRIPTION": "We have a broad knowledge of modern JavaScript web frameworks.",
+    "BACKEND": "Backend",
+    "BACKEND_DESCRIPTION": "We build web services and web applications using C# and JavaScript.",
+    "DEVOPS": "DevOps",
+    "DEVOPS_DESCRIPTION": "We ensure CI/CD using a proven set of DevOps technologies.",
+    "UI/UX": "UI/UX",
+    "UI/UX_DESCRIPTION": "We use tools that make our design process effortless."
+  },
+  "ABOUT_US": {
+    "WHO_WE_ARE": "Ով ենք մենք",
+    "WHO_WE_ARE_DESCRIPTION": "Մենք ամբողջ խմբով վեբ մշակողների թիմ ենք, որոնք ամբողջ աշխարհի հաճախորդներին մատուցում են վեբ զարգացման ծառայություններ: Մենք շուկայում գործում ենք արդեն 5 տարի: Մեր փորձի տիրույթը բաղկացած է երկու հիմնական տեխնոլոգիաներից `JavaScript, PHP և Java, որոնք մենք օգտագործում ենք և առջևում, և հետին պլանում: Մեր աշխատանքն ավարտվում է համապատասխան արտադրական UX և UI դիզայնով:",
+    "WHAT_WE_DO": "Ինչ մենք ենք անում",
+    "WHAT_WE_DO_DESCRIPTION": "Մեր ոգևորությունը մեզ դրդեց դառնալ Հնդկաստանի և ԱՄՆ-ի ՏՏ ոլորտի առաջատար ընկերություն `արդյունաբերության կողմից ղեկավարվող տարբեր շարժական լուծումներ հաղորդելու համար վեբ և բջջային հավելվածների զարգացման տիրույթներում` օգտագործելով ֆուտուրիստական ​​տեխնոլոգիաներ, ինչպիսիք են «Իրերի ինտերնետ» (IoT), AI-ML, AR-VR, Ձայն օգնականներ և ձայնային հմտություններ, DevOps և ամպային հաշվարկ և այլն:Մենք մեզ լիազորված ենք զգում մեր հավաստագրված տեխնոլոգիական փորձագետների և մեր R&D թիմի հետ, ովքեր միշտ իրենց մարտահրավեր են նետել `օգնելու գլոբալ հաճախորդներին` ՏՏ ծառայությունների և լուծումների բազում քանակով: Մեր թիմի հետ ներգրավվածությունը մեր հաճախորդներին երաշխավորում է հսկայական գումար խնայել նախագծի մշակման վրա ՝ ավելի արագ առաքմամբ:",
+    "WHY_US": "Ինչու մեզ",
+    "WHY_US_DESCRIPTION": "Բազմազան հաճախորդների համար աշխատելու երկար տարիների պատմություն և տարբեր չափերի տարբեր նախագծեր ղեկավարելու համար մենք լավագույններից մեկն ենք շուկայում: Չնայած կան բազմաթիվ պատճառներ, որ ձեր բիզնեսը, անշուշտ, օգուտ կբերի մեր համագործակցությունից, ահա այն կարևորագույն դրվագները, որոնք սահմանում են մեր ընկերությունը և մեզ առանձնացնում ամբոխի մեջ:",
+    "CUSTOMERS_RECOMMEND_US": "Մեր հաճախորդները խորհուրդ են տալիս մեզ",
+    "CUSTOMERS_RECOMMEND_US_DESCRIPTION": "Որոշ հաջողված նախագծերի մանրամասն վկայություններ, որոնց մենք մասնակցել ենք, հասանելի են Clutch.co- ում: Մենք բարձր գնահատական ​​ենք ստանում ինչպես մատչելիության, այնպես էլ հաճախորդի ընդհանուր բավարարվածության առումով:",
+    "PROJECT_TRANSPARENCY": "Մենք բարձր ենք գնահատում ծրագրի թափանցիկությունը",
+    "PROJECT_TRANSPARENCY_DESCRIPTION": "Որոշ հաջողված նախագծերի մանրամասն վկայություններ, որոնց մենք մասնակցել ենք, հասանելի են Clutch.co- ում: Մենք բարձր գնահատական ​​ենք ստանում ինչպես մատչելիության, այնպես էլ հաճախորդի ընդհանուր բավարարվածության առումով:",
+    "PROACTIVE_APPROACH": "Մենք ունենք նախաձեռնողական մոտեցում",
+    "PROACTIVE_APPROACH_DESCRIPTION": "Որոշ հաջողված նախագծերի մանրամասն վկայություններ, որոնց մենք մասնակցել ենք, հասանելի են Clutch.co- ում: Մենք բարձր գնահատական ​​ենք ստանում ինչպես մատչելիության, այնպես էլ հաճախորդի ընդհանուր բավարարվածության առումով:",
+    "EMPHASIS_ON_COMMUNICATION": "Մենք շեշտը դնում ենք հաղորդակցության վրա",
+    "EMPHASIS_ON_COMMUNICATION_DESCRIPTION": "Որոշ հաջողված նախագծերի մանրամասն վկայություններ, որոնց մենք մասնակցել ենք, հասանելի են Clutch.co- ում: Մենք բարձր գնահատական ​​ենք ստանում ինչպես մատչելիության, այնպես էլ հաճախորդի ընդհանուր բավարարվածության առումով:",
+    "LONG_TERM_ORIENTED": "Մենք կողմնորոշված ​​ենք երկարաժամկետ",
+    "LONG_TERM_ORIENTED_DESCRIPTION": "Որոշ հաջողված նախագծերի մանրամասն վկայություններ, որոնց մենք մասնակցել ենք, հասանելի են Clutch.co- ում: Մենք բարձր գնահատական ​​ենք ստանում ինչպես մատչելիության, այնպես էլ հաճախորդի ընդհանուր բավարարվածության առումով:",
+    "APPROACHED_INDIVIDUALLY": "Յուրաքանչյուր նախագծի մոտենում է անհատապես",
+    "APPROACHED_INDIVIDUALLY_DESCRIPTION": "Որոշ հաջողված նախագծերի մանրամասն վկայություններ, որոնց մենք մասնակցել ենք, հասանելի են Clutch.co- ում: Մենք բարձր գնահատական ​​ենք ստանում ինչպես մատչելիության, այնպես էլ հաճախորդի ընդհանուր բավարարվածության առումով:"
+  },
+  "DEDICATED_TEAMS": {
+    "TITLE": "Dedicated Development Team",
+    "TITLE_DESCRIPTION": "Do you have a limited workforce, want to scale your team for a particular project, or maybe hiring new developers locally is too time and cost-consuming? We will hire and manage the top notch software developers for you, giving you full control over the project.",
+    "WORKING_WITH_BUSINESSES": "Working with Businesses of All Sizes",
+    "WORKING_WITH_BUSINESSES_DESCRIPTION": "We work with sole-traders, small businesses and huge enterprises. We can organize a single developer or a whole dedicated team of any size, depending on your needs.",
+    "OUR_TECHNOLOGY_STACK": "Our Technology Stack",
+    "OUR_TECHNOLOGY_STACK_DESCRIPTION": "To maintain the highest quality of our service, we employ only the latest, most reliable technologies we feel comfortable working with. Assisted with today’s lean and agile software development processes, our developers are experienced in a wide range of programming frameworks best suited for the job.",
+    "WHY_THIS_FORM": "Why this form",
+    "WHY_THIS_FORM_DESCRIPTION": "Tap into global resources and share the workload with our dedicated developer teams. We will take over all your development processes and take the full responsibility for the result."
+  },
+  "WE_OPERATE_WORLDWIDE": {
+    "TITLE": "We Operate Worldwide",
+    "COUNTRIES": {
+      "TORONTO": "Տորոնտո",
+      "NEW_YORK": "Նյու Յորք",
+      "HOUSTON": "Հյուստոն",
+      "MANCHESTER": "Մանչեսթեր",
+      "MOSCOW": "Մոսկվա",
+      "AMSTERDAM": "Ամստերդամ",
+      "PARIS": "Փարիզ",
+      "MUNICH": "Մյունխեն",
+      "ATHENS": "Աթենք",
+      "DUBAI": "Դուբայ",
+      "TOKYO": "Տոկյո"
+    }
+  }
+}

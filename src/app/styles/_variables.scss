@@ -1,0 +1,17 @@
+// Screen Sizes
+$ultra: 2560px;
+$laptop-l: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobile-l: 425px;
+$mobile-m: 375px;
+$mobile-s: 320px;
+
+// Media
+$media-ultra: "only screen and (max-width: #{$ultra})";
+$media-laptop-l: "only screen and (max-width: #{$laptop-l})";
+$media-laptop: "only screen and (max-width: #{$laptop})";
+$media-tablet: "only screen and (max-width: #{$tablet})";
+$media-mobile-l: "only screen and (max-width: #{$mobile-l})";
+$media-mobile-m: "only screen and (max-width: #{$mobile-m})";
+$media-mobile-s: "only screen and (max-width: #{$mobile-s})";

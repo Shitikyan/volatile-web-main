@@ -1,0 +1,127 @@
+@import "global";
+
+:host ::ng-deep .vs-button button {
+  color: var(--footer-text-color);
+}
+
+:host ::ng-deep {
+  .pi.pi-facebook,
+  .pi.pi-twitter,
+  .pi.pi-github {
+    font-size: 1.5rem;
+  }
+}
+
+.footer {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--secondary-gradient-left-color),
+    var(--secondary-gradient-right-color)
+  );
+  color: var(--footer-text-color);
+  padding: 6rem 0 2rem;
+
+  app-text {
+    color: var(--footer-text-color);
+  }
+
+  .flexify {
+    display: flex;
+    justify-content: space-between;
+
+    &.footer-nav {
+      column-gap: 50px;
+    }
+
+    .footer-section-content {
+      display: grid;
+      grid-gap: 1rem;
+
+      .footer-section-content-item > vs-icon {
+        padding-right: 10px;
+      }
+    }
+
+    .footer-section-content {
+      font-weight: 600;
+    }
+  }
+
+  .linkIcons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1rem;
+  }
+
+  .find-us {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0.5rem;
+    font-weight: 600;
+
+    .country {
+      display: block;
+    }
+  }
+
+  .cols {
+    max-width: 12rem;
+  }
+
+  .cols > app-text {
+    display: block;
+    padding-bottom: 1rem;
+  }
+
+  .footer-content {
+    .footer-container {
+      .footer-branding {
+        .logo {
+          width: 100%;
+          display: flex;
+          align-items: center;
+
+          app-logo {
+            width: 80px;
+            height: 80px;
+          }
+
+          app-text {
+            color: var(--main-color);
+            width: 100px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .allRightReserved {
+      margin-top: 6rem;
+
+      app-text {
+        color: #929090;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #929090;
+      }
+    }
+  }
+}
+
+@media #{$media-tablet} {
+  .footer {
+    padding-top: 2rem;
+  }
+
+  .allRightReserved {
+    margin-top: 2rem !important;
+  }
+
+  .flexify {
+    flex-direction: column;
+    row-gap: get-space("lg");
+  }
+}

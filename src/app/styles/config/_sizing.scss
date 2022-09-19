@@ -1,0 +1,56 @@
+// Sizing 
+$sizing: (
+    space: (
+        sm: 1rem,
+        md: 2rem,
+        lg: 3rem,
+        ultra: 10rem
+    ),
+    text: (
+        xs: 1rem,
+        sm: 1.5rem,
+        md: 2rem,
+        lg: 3rem,
+    ),
+    media: (
+        space: (
+            laptop: (
+                sm: 0.75rem,
+                md: 1.5rem,
+                lg: 2rem,
+                ultra: 5rem
+            )
+        ),
+        text: (
+            laptop: (
+                xs: 0.75rem,
+                sm: 1rem,
+                md: 1.5rem,
+                lg: 2rem
+            )
+        )
+    )
+);
+
+@each $name, $size in map-deep-get($sizing, 'text') {
+    .text-#{$name} {
+        font-size: $size;
+    }
+}
+
+@function get-font($size) {
+    @return map-deep-get($sizing, text, $size);
+}
+
+@function get-media-font($media, $size) {
+    @return map-deep-get($sizing, media, text, $media, $size);
+}
+
+
+@function get-space($size) {
+    @return map-deep-get($sizing, space, $size);
+}
+
+@function get-media-space($media, $size) {
+    @return map-deep-get($sizing, media, space, $media, $size);
+}

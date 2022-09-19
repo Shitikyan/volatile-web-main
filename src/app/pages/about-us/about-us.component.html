@@ -1,0 +1,27 @@
+<app-container class="about-us">
+    <div class="answerQuestions">
+        <app-about-us-question-answer [question]="'ABOUT_US.WHO_WE_ARE' | translate"
+            [answer]="'ABOUT_US.WHO_WE_ARE_DESCRIPTION' | translate">
+        </app-about-us-question-answer>
+        <app-about-us-question-answer [question]="'ABOUT_US.WHAT_WE_DO' | translate"
+            [answer]="'ABOUT_US.WHAT_WE_DO_DESCRIPTION' | translate">
+        </app-about-us-question-answer>
+        <app-about-us-question-answer [question]="'ABOUT_US.WHY_US' | translate"
+            [answer]="'ABOUT_US.WHY_US_DESCRIPTION' | translate">
+        </app-about-us-question-answer>
+    </div>
+    <div class="cards">
+        <app-about-us-things [number]="'01'" [title]="'ABOUT_US.CUSTOMERS_RECOMMEND_US' | translate"
+            [text]="'ABOUT_US.CUSTOMERS_RECOMMEND_US_DESCRIPTION' | translate"></app-about-us-things>
+        <app-about-us-things [number]="'02'" [title]="'ABOUT_US.PROJECT_TRANSPARENCY' | translate"
+            [text]="'ABOUT_US.PROJECT_TRANSPARENCY_DESCRIPTION' | translate"></app-about-us-things>
+        <app-about-us-things [number]="'03'" [title]="'ABOUT_US.PROACTIVE_APPROACH' | translate"
+            [text]="'ABOUT_US.PROACTIVE_APPROACH_DESCRIPTION' | translate"></app-about-us-things>
+        <app-about-us-things [number]="'04'" [title]="'ABOUT_US.EMPHASIS_ON_COMMUNICATION' | translate"
+            [text]="'ABOUT_US.EMPHASIS_ON_COMMUNICATION_DESCRIPTION' | translate"></app-about-us-things>
+        <app-about-us-things [number]="'05'" [title]="'ABOUT_US.LONG_TERM_ORIENTED' | translate"
+            [text]="'ABOUT_US.LONG_TERM_ORIENTED_DESCRIPTION' | translate"></app-about-us-things>
+        <app-about-us-things [number]="'06'" [title]="'ABOUT_US.APPROACHED_INDIVIDUALLY' | translate"
+            [text]="'ABOUT_US.APPROACHED_INDIVIDUALLY_DESCRIPTION' | translate"></app-about-us-things>
+    </div>
+</app-container>

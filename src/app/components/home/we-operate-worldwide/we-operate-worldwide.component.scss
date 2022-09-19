@@ -1,0 +1,29 @@
+@import "global";
+
+.operate-worldwide {
+  display: grid;
+  row-gap: get-space("md");
+}
+
+.map-marker {
+  cursor: pointer;
+}
+
+.world-map ::ng-deep img {
+  max-width: 100%;
+}
+
+.world-map path {
+  fill: var(--map-color);
+  transition: all 0.3s;
+}
+
+.world-map path:hover {
+  fill: var(--primary-color);
+}
+
+@media #{$media-laptop} {
+  .operate-worldwide {
+    row-gap: get-space("sm");
+  }
+}

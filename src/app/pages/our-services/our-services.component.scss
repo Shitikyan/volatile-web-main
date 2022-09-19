@@ -1,0 +1,93 @@
+@import "global";
+
+.our-services-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: get-space("ultra");
+
+  .services-intro-section {
+    display: grid;
+    column-gap: 5%;
+    row-gap: 40px;
+    grid-template-columns: repeat(3, minmax(30%, 450px));
+  }
+
+  @media #{$media-laptop-l} {
+    .services-intro-section {
+      grid-template-columns: repeat(2, minmax(30%, 450px));
+    }
+    .tech-stack-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media #{$media-tablet} {
+    .services-intro-section {
+      grid-template-columns: repeat(1, minmax(30%, 450px));
+    }
+  }
+
+  .tech-stack-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(500px, 45%));
+    column-gap: 10%;
+    row-gap: 40px;
+
+    &__header {
+      grid-column: app-text 2;
+    }
+  }
+
+  @media #{$media-laptop} {
+    ::ng-deep {
+      .services-intro-section app-sub-title {
+        text-align: center;
+      }
+      .services-intro-section .read-more-btn .p-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      app-technology-stack {
+        app-paragraph {
+          font-size: get-font('sm');
+        } 
+        app-text-secondary {
+          font-size: get-font('xs');
+        }
+        .tech-items {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    }
+    .description {
+      font-size: get-font('xs');
+    }
+    .our-technology-stack-description {
+      app-sub-title {
+        font-size: get-font('sm');
+      }
+      app-text-secondary {
+        font-size: get-font('xs');
+      }
+    }
+  }
+
+  .our-technology-stack-description {
+    padding-bottom: 45px;
+  }
+
+  .technology-stacks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+}
+
+@media #{$media-laptop} {
+  .our-services-container {
+    row-gap: get-media-space("laptop", "ultra");
+  }
+}

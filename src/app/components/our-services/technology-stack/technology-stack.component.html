@@ -1,0 +1,7 @@
+<app-paragraph>{{ title }}</app-paragraph>
+<app-text-secondary class="description">{{ description }}</app-text-secondary>
+
+<app-text-secondary class="core-technologies">{{ 'OUR_SERVICES.CORE_TECHNOLOGIES' | translate }}</app-text-secondary>
+<div class="tech-items">
+    <app-technology-item *ngFor="let item of items" [name]="item.name" [icon]="item.icon"></app-technology-item>
+</div>

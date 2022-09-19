@@ -1,0 +1,64 @@
+<div class="footer">
+  <app-container class="footer-content">
+    <div class="footer-container flexify">
+      <div class="footer-branding">
+        <div class="logo">
+          <app-img path="/assets/images" name="logo-text.svg"></app-img>
+        </div>
+      </div>
+      <div class="footer-nav flexify">
+        <div class="cols work-with-us">
+          <app-text>{{ "FOOTER.WORKWITHUS.TITLE" | translate }}</app-text>
+          <div class="footer-section-content">
+            <div class="footer-section-content-item">
+              <vs-icon name="envelope"></vs-icon>
+              <app-text class="workWithUsText">{{
+                "FOOTER.WORKWITHUS.EMAIL" | translate
+              }}</app-text>
+            </div>
+            <div class="footer-section-content-item">
+              <vs-icon name="mobile"></vs-icon>
+              <app-text class="workWithUsText">{{
+                "FOOTER.WORKWITHUS.PHONE" | translate
+              }}</app-text>
+            </div>
+          </div>
+        </div>
+        <div class="cols">
+          <app-text>{{ "FOOTER.FOLLOWUS.TITLE" | translate }}</app-text>
+          <div class="linkIcons">
+            <vs-button type="link">
+              <vs-icon name="facebook"></vs-icon>
+            </vs-button>
+            <vs-button type="link">
+              <vs-icon name="twitter"></vs-icon>
+            </vs-button>
+            <vs-button type="link">
+              <vs-icon name="github"></vs-icon>
+            </vs-button>
+          </div>
+        </div>
+        <div class="cols">
+          <app-text>{{ "FOOTER.FINDUS.TITLE" | translate }}</app-text>
+          <div class="linkIcons">
+            <div class="find-us">
+              <vs-icon name="map-marker"></vs-icon>
+              <div>
+                <app-text class="workWithUsText">{{
+                  "FOOTER.FINDUS.STREET" | translate
+                }}</app-text>
+                <app-text class="workWithUsText country">{{
+                  "FOOTER.FINDUS.COUNTRY" | translate
+                }}</app-text>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="allRightReserved">
+      <hr />
+      <app-text>{{ "FOOTER.LASTTEXT" | translate }}</app-text>
+    </div>
+  </app-container>
+</div>

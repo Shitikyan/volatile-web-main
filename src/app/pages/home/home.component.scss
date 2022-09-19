@@ -1,0 +1,12 @@
+@import 'global';
+
+:host {
+    display: grid;
+    row-gap: get-space('ultra');
+}
+
+@media #{$media-laptop} {
+  :host {
+    row-gap: get-media-space('laptop', 'ultra');
+  }
+}

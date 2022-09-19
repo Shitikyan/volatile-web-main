@@ -1,0 +1,69 @@
+<app-container class="our-services-container">
+  <app-text-secondary class="mw-100">{{
+    "OUR_SERVICES.PAGE_DESCRIPTION" | translate
+  }}</app-text-secondary>
+
+  <div class="services-intro-section">
+    <app-service-intro
+      [title]="'OUR_SERVICES.FRONTEND_DEVELOPMENT' | translate"
+      [scrollEl]="frontend"
+    ></app-service-intro>
+    <app-service-intro
+      [title]="'OUR_SERVICES.BACKEND_DEVELOPMENT' | translate"
+      [scrollEl]="backend"
+    ></app-service-intro>
+    <app-service-intro
+      [title]="'OUR_SERVICES.DESIGN' | translate"
+      [scrollEl]="uiux"
+    ></app-service-intro>
+  </div>
+
+  <div>
+    <div class="our-technology-stack-description">
+      <app-sub-title>{{
+        "OUR_SERVICES.OUR_TECHNOLOGY_STACK" | translate
+      }}</app-sub-title>
+      <app-text-secondary>{{
+        "OUR_SERVICES.OUR_TECHNOLOGY_STACK_DESCRIPTION" | translate
+      }}</app-text-secondary>
+    </div>
+
+    <div class="technology-stacks">
+      <div #frontend>
+        <app-technology-stack
+          [title]="'TECHNOLOGY_STACK.FRONTEND' | translate"
+          [description]="'TECHNOLOGY_STACK.FRONTEND_DESCRIPTION' | translate"
+          [items]="technologyStacks['FRONTEND'].technologies"
+        >
+        </app-technology-stack>
+      </div>
+
+      <div #backend>
+        <app-technology-stack
+          [title]="'TECHNOLOGY_STACK.BACKEND' | translate"
+          [description]="'TECHNOLOGY_STACK.BACKEND_DESCRIPTION' | translate"
+          [items]="technologyStacks['BACKEND'].technologies"
+        >
+        </app-technology-stack>
+      </div>
+
+      <div #devops>
+        <app-technology-stack
+          [title]="'TECHNOLOGY_STACK.DEVOPS' | translate"
+          [description]="'TECHNOLOGY_STACK.DEVOPS_DESCRIPTION' | translate"
+          [items]="technologyStacks['DEVOPS'].technologies"
+        >
+        </app-technology-stack>
+      </div>
+
+      <div #uiux>
+        <app-technology-stack
+          [title]="'TECHNOLOGY_STACK.UI/UX' | translate"
+          [description]="'TECHNOLOGY_STACK.UI/UX_DESCRIPTION' | translate"
+          [items]="technologyStacks['UI/UX'].technologies"
+        >
+        </app-technology-stack>
+      </div>
+    </div>
+  </div>
+</app-container>

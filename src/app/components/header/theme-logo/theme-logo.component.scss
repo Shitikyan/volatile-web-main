@@ -1,0 +1,14 @@
+.themeIcon {
+  display: flex;
+  cursor: pointer;
+
+  .light,
+  .dark {
+    fill: var(--theme-icon-button);
+    stroke: var(--theme-icon-button);
+  }
+
+  .iconContainer {
+    height: 26px;
+  }
+}

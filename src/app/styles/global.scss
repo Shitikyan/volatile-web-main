@@ -1,0 +1,30 @@
+ 
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import 'primeng/resources/primeng.min.css';
+@import 'primeng/resources/themes/nova-accent/theme.css';
+@import 'primeicons/primeicons.css';
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+@import 'flexbox';
+@import 'helpers';
+@import 'config/export';
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  @include font-roboto();
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", "sans-serif";
+  font-size: 16px;
+}
+
+a, .cp {
+  cursor: pointer;
+}
+
+h1, h2 {
+  margin-bottom: 2rem;
+}

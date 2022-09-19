@@ -1,0 +1,44 @@
+<app-container class="our-services">
+  <app-title>{{ "OUR_SERVICES.TITLE" | translate }}</app-title>
+  <app-text-secondary class="our-services__description">{{
+    "OUR_SERVICES.DESCRIPTION" | translate
+  }}</app-text-secondary>
+
+  <div class="flex space-between badges-container">
+    <app-badge class="flex cell">
+      <div class="flex badges-container--gap">
+        <vs-icon name="user" fontSize="40px"></vs-icon>
+
+        <div class="badges-container__description">
+          <app-sub-title>{{
+            "OUR_SERVICES.CUSTOM_SOFTWARE_DEVELOPMENT" | translate
+          }}</app-sub-title>
+          <app-text-secondary>{{
+            "OUR_SERVICES.CUSTOM_SOFTWARE_DEVELOPMENT_DESCRIPTION" | translate
+          }}</app-text-secondary>
+          <vs-button type="link">{{
+            "COMMON.LEARN_MORE" | translate
+          }}</vs-button>
+        </div>
+      </div>
+    </app-badge>
+
+    <app-badge class="flex cell">
+      <div class="flex badges-container--gap">
+        <vs-icon name="user-plus" fontSize="40px"></vs-icon>
+
+        <div class="badges-container__description">
+          <app-sub-title>{{
+            "OUR_SERVICES.DEDICATED_DEVELOPMENT_TEAM" | translate
+          }}</app-sub-title>
+          <app-text-secondary>{{
+            "OUR_SERVICES.DEDICATED_DEVELOPMENT_TEAM_DESCRIPTION" | translate
+          }}</app-text-secondary>
+          <vs-button type="link">{{
+            "COMMON.LEARN_MORE" | translate
+          }}</vs-button>
+        </div>
+      </div>
+    </app-badge>
+  </div>
+</app-container>

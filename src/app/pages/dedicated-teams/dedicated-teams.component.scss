@@ -1,0 +1,28 @@
+@import "global";
+
+.dedicated-teams-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  row-gap: get-space("ultra");
+
+  .dedicated-teams-container-item {
+    display: grid;
+    row-gap: get-space("md");
+  }
+}
+
+@media #{$media-laptop} {
+  .dedicated-teams-container {
+    row-gap: get-space("md");
+
+    .dedicated-teams-container-item {
+      row-gap: get-space("sm");
+
+      app-text-secondary {
+        font-size: get-font("xs");
+      }
+    }
+  }
+}

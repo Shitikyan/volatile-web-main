@@ -1,0 +1,22 @@
+:host {
+  ::ng-deep app-badge {
+    height: 50px;
+    background-color: #fff;
+
+    .badge-padding {
+      padding: 0.65rem 1rem !important;
+      display: flex;
+      align-items: center;
+      height: fill-available !important;
+    }
+    .icon-block {
+      width: 1.75rem;
+      margin-right: 0.6rem;
+      display: inline-flex;
+
+      .icon-img {
+        width: 100%;
+      }
+    }
+  }
+}

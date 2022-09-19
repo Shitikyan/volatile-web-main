@@ -1,0 +1,35 @@
+@import "global";
+
+.about-us {
+  display: grid;
+  row-gap: 10rem;
+
+  .answerQuestions {
+    display: grid;
+    row-gap: get-space("ultra");
+    padding-bottom: get-space("md");
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+    row-gap: get-space("lg");
+  }
+}
+
+@media #{$media-laptop} {
+  .about-us {
+    row-gap: get-media-space("laptop", "ultra");
+  }
+
+  .about-us .answerQuestions {
+    row-gap: get-media-space("laptop", "lg");
+    padding: 0;
+  }
+
+  .about-us .cards {
+    grid-template-columns: 1fr;
+    row-gap: get-media-space("laptop", "lg");
+  }
+}

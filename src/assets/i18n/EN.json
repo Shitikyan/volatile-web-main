@@ -1,0 +1,125 @@
+{
+  "HEADER": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "OUR_SERVICES": "Our Services",
+    "TEAMS": "Dedicated Teams",
+    "STUDIES": "Case Studies",
+    "CAREER": "Career",
+    "CONTACT": "Contact"
+  },
+  "BANNER": {
+    "HEADLINE": "Your Agile Development Team Ready To Boost Your Business",
+    "PARAGRAPH": "We engineer high-class custom software that solves SMBs challenges worldwide",
+    "LINK": "SEE MORE ABOUT VOLATILE",
+    "YEARS_IN_BUSINESS": "YEARS IN THE BUSINESS",
+    "SOLUTIONS_DELIVERED": "PROJECTS HANDLED",
+    "COUNTRIES_OF_CUSTOMERS": "COUNTRIES OF CUSTOMERS",
+    "BUSINESS_DELIVERED": "BUSINESS DELIVERED"
+  },
+  "FOOTER": {
+    "WORKWITHUS": {
+      "TITLE": "Work with Us",
+      "EMAIL": "example@gmail.com",
+      "PHONE": "+37499000000"
+    },
+    "FOLLOWUS": {
+      "TITLE": "Follow Us"
+    },
+    "FINDUS": {
+      "TITLE": "Find Us",
+      "STREET": "Antarayin 31",
+      "COUNTRY": "Yerevan, Armenia"
+    },
+    "LASTTEXT": "© 2020 Volatile Solutions Spy. All rights reserved."
+  },
+  "OUR_SERVICES": {
+    "TITLE": "Our Services",
+    "DESCRIPTION": "You can hire our agile development team on terms that suit your business best.",
+    "CUSTOM_SOFTWARE_DEVELOPMENT": "Custom Software Development",
+    "CUSTOM_SOFTWARE_DEVELOPMENT_DESCRIPTION": "We build scalable high-performance web development solutions from scratch.",
+    "DEDICATED_DEVELOPMENT_TEAM": "Dedicated Development Team",
+    "DEDICATED_DEVELOPMENT_TEAM_DESCRIPTION": "We provide you with an agile team of web development specialists that integrate well with you process.",
+    "PAGE_DESCRIPTION": "We build complete solutions from an idea to the final product. Every project we undertake, due to its uniqueness, is carefully analyzed and planned to ensure it's delivered on time and on budget. We have a proven track of reliability in three core service types.",
+    "FRONTEND_DEVELOPMENT": "Frontend Development",
+    "BACKEND_DEVELOPMENT": "Backend Development",
+    "DESIGN": "Design",
+    "OUR_TECHNOLOGY_STACK": "Our Technology Stack",
+    "OUR_TECHNOLOGY_STACK_DESCRIPTION": "State-of-the-art frameworks and a carefully selected set of tools is what constitutes the backbone of our daily operations.",
+    "CORE_TECHNOLOGIES": "Core Technologies"
+  },
+  "COMMON": {
+    "READ_MORE": "Read more",
+    "LEARN_MORE": "Learn more",
+    "REQUIRED": "Please complete this required field",
+    "EMAIL": "Email must be formatted correctly"
+  },
+  "CONTACT_US": {
+    "TITLE": "Connect with our experts.",
+    "TITLE_DESCRIPTION": "Contact us to make your business greater!",
+    "FIRST_NAME": "First Name *",
+    "LAST_NAME": "Last Name *",
+    "EMAIL": "Email *",
+    "PHONE": "Phone *",
+    "COMPANY": "Company *",
+    "SUBJECT": "Subject *",
+    "MESSAGE": "Message *",
+    "SUBMIT": "Submit"
+  },
+  "TECHNOLOGY_STACK": {
+    "FRONTEND": "Frontend",
+    "FRONTEND_DESCRIPTION": "We have a broad knowledge of modern JavaScript web frameworks.",
+    "BACKEND": "Backend",
+    "BACKEND_DESCRIPTION": "We build web services and web applications using C# and JavaScript.",
+    "DEVOPS": "DevOps",
+    "DEVOPS_DESCRIPTION": "We ensure CI/CD using a proven set of DevOps technologies.",
+    "UI/UX": "UI/UX",
+    "UI/UX_DESCRIPTION": "We use tools that make our design process effortless."
+  },
+  "ABOUT_US": {
+    "WHO_WE_ARE": "Who We are",
+    "WHO_WE_ARE_DESCRIPTION": "We are a team of full-stack web developers providing web development services to customers worldwide. We’ve been operating on the market for 5 years now. Our domain of expertise boils down to two core technologies - JavaScript, PHP and Java - which we use on both the frontend and the backend. Our work is made complete by corresponding UX & UI Design we produce.",
+    "WHAT_WE_DO": "What We Do",
+    "WHAT_WE_DO_DESCRIPTION": "Our enthusiasm has led us to become a top IT company in India & USA for delivering various industry-led mobility solutions in web and mobile application development domains leveraging futuristic technologies like Internet of Things (IoT), AI-ML, AR-VR, Voice assistants and Voice Skills, DevOps & Cloud computing, etc.We feel empowered with our certified tech experts and our R&D team who have always challenged themselves to help global clientele with a plethora of IT services and solutions. Engagement with our team guarantees our clients to save huge money on project development with faster delivery.",
+    "WHY_US": "Why Us",
+    "WHY_US_DESCRIPTION": "With a long history of working for diverse customers and managing various projects of all sizes, we are one of the best on the market. While there are many reasons your business would surely benefit from our cooperation, here are some of the highlights that define our company, and make us stand out in the crowd.",
+    "CUSTOMERS_RECOMMEND_US": "Our Customers Recommend Us",
+    "CUSTOMERS_RECOMMEND_US_DESCRIPTION": "The detailed testimonials of some of the successful projects we’ve taken part in are available on Clutch.co. We score high on both deliverability and overall customer satisfaction.",
+    "PROJECT_TRANSPARENCY": "We highly value project transparency",
+    "PROJECT_TRANSPARENCY_DESCRIPTION": "The detailed testimonials of some of the successful projects we’ve taken part in are available on Clutch.co. We score high on both deliverability and overall customer satisfaction.",
+    "PROACTIVE_APPROACH": "We have a proactive approach",
+    "PROACTIVE_APPROACH_DESCRIPTION": "The detailed testimonials of some of the successful projects we’ve taken part in are available on Clutch.co. We score high on both deliverability and overall customer satisfaction.",
+    "EMPHASIS_ON_COMMUNICATION": "We put emphasis on communication",
+    "EMPHASIS_ON_COMMUNICATION_DESCRIPTION": "The detailed testimonials of some of the successful projects we’ve taken part in are available on Clutch.co. We score high on both deliverability and overall customer satisfaction.",
+    "LONG_TERM_ORIENTED": "We are long-term oriented",
+    "LONG_TERM_ORIENTED_DESCRIPTION": "The detailed testimonials of some of the successful projects we’ve taken part in are available on Clutch.co. We score high on both deliverability and overall customer satisfaction.",
+    "APPROACHED_INDIVIDUALLY": "Each project is approached individually",
+    "APPROACHED_INDIVIDUALLY_DESCRIPTION": "The detailed testimonials of some of the successful projects we’ve taken part in are available on Clutch.co. We score high on both deliverability and overall customer satisfaction."
+  },
+  "DEDICATED_TEAMS": {
+    "TITLE": "Dedicated Development Team",
+    "TITLE_DESCRIPTION": "Do you have a limited workforce, want to scale your team for a particular project, or maybe hiring new developers locally is too time and cost-consuming? We will hire and manage the top notch software developers for you, giving you full control over the project.",
+    "WORKING_WITH_BUSINESSES": "Working with Businesses of All Sizes",
+    "WORKING_WITH_BUSINESSES_DESCRIPTION": "We work with sole-traders, small businesses and huge enterprises. We can organize a single developer or a whole dedicated team of any size, depending on your needs.",
+    "OUR_TECHNOLOGY_STACK": "Our Technology Stack",
+    "OUR_TECHNOLOGY_STACK_DESCRIPTION": "To maintain the highest quality of our service, we employ only the latest, most reliable technologies we feel comfortable working with. Assisted with today’s lean and agile software development processes, our developers are experienced in a wide range of programming frameworks best suited for the job.",
+    "WHY_THIS_FORM": "Why this form",
+    "WHY_THIS_FORM_DESCRIPTION": "Tap into global resources and share the workload with our dedicated developer teams. We will take over all your development processes and take the full responsibility for the result."
+  },
+  "WE_OPERATE_WORLDWIDE": {
+    "TITLE": "We Operate Worldwide",
+    "COUNTRIES": {
+      "TORONTO": "Toronto",
+      "NEW_YORK": "New York",
+      "HOUSTON": "Houston",
+      "MANCHESTER": "Manchester",
+      "MOSCOW": "Moscow",
+      "AMSTERDAM": "Amsterdam",
+      "PARIS": "Paris",
+      "MUNICH": "Munich",
+      "ATHENS": "Athens",
+      "DUBAI": "Dubai",
+      "TOKYO": "Tokyo"
+    }
+  }
+}

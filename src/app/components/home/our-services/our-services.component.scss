@@ -1,0 +1,37 @@
+@import "global";
+
+.our-services {
+  display: grid;
+  row-gap: get-space("sm");
+  .our-services__description {
+    margin-bottom: get-space("sm");
+  }
+}
+
+:host {
+  .badges-container {
+    column-gap: 40px;
+
+    &--gap {
+      column-gap: get-space("md");
+    }
+
+    &__description {
+      display: grid;
+      row-gap: 25px;
+    }
+  }
+}
+
+@media #{$media-laptop} {
+  .badges-container {
+    flex-wrap: wrap;
+    row-gap: map-deep-get($sizing, "media", "space", "laptop", "sm");
+
+    &__description {
+      app-text-secondary {
+        display: none;
+      }
+    }
+  }
+}

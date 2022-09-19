@@ -1,0 +1,16 @@
+@import "global";
+
+:host {
+  max-width: 50rem;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: get-font('xs');
+  display: block;
+  color: var(--secondary-color);
+}
+
+@media #{$media-laptop} {
+  :host {
+    font-size: get-media-font('laptop', 'xs');
+  }
+}

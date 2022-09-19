@@ -1,0 +1,144 @@
+@import "global";
+
+:host ::ng-deep {
+  .vs-button button {
+    color: var(--main-color);
+  }
+
+  .seeMoreButton .p-button {
+    padding: 0 get-space("lg");
+  }
+}
+
+.main-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .banner-content {
+    .banner-intro {
+      display: grid;
+      flex-direction: column;
+      row-gap: get-space("sm");
+
+      .banner-body {
+        display: grid;
+        grid-template-columns: auto auto;
+
+        .banner-left {
+          display: grid;
+          row-gap: get-space("sm");
+        }
+      }
+
+      .banner-text {
+        display: grid;
+        height: min-content;
+        row-gap: get-space("sm");
+
+        .seeMoreButton {
+          width: fit-content;
+        }
+      }
+
+      .achievements {
+        display: grid;
+        column-gap: get-space("lg");
+        grid-template-columns: 1fr 1fr;
+        align-items: end;
+        app-achievement-badge {
+          display: grid;
+          row-gap: get-space("sm");
+        }
+      }
+    }
+
+    .banner-image {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        border-radius: 40px;
+      }
+    }
+  }
+}
+
+@media #{$media-laptop-l} {
+  .banner-headline app-title {
+    font-size: 42px !important;
+  }
+  .banner-image img {
+    width: 350px;
+  }
+
+  .banner-text {
+    row-gap: get-space("sm");
+  }
+}
+
+@media #{$media-laptop} {
+  :host ::ng-deep {
+    .seeMoreButton .p-button {
+      padding: 0 get-space("md");
+    }
+
+    .achievements app-achievement-badge app-paragraph {
+      text-align: center;
+      font-size: get-font('xs') !important;
+    }
+  }
+
+  .banner-body {
+    grid-template-columns: auto !important;
+  }
+
+  .banner-text {
+    justify-content: center;
+  }
+
+  .banner-headline app-title {
+    font-size: 32px !important;
+  }
+
+  .achievements app-achievement-badge {
+    justify-content: center;
+  }
+
+  .banner-headline {
+    app-title {
+      text-align: center;
+    }
+  }
+
+  app-text-secondary {
+    display: none;
+  }
+
+  .banner-image img {
+    width: 350px;
+  }
+
+  .banner-paragraph {
+    font-size: 14px;
+  }
+
+  .banner-content {
+    grid-template-columns: 100% !important;
+
+    .banner-intro {
+      row-gap: 40px !important;
+    }
+  }
+
+  .banner-image {
+    display: none !important;
+  }
+}
+
+@media #{$media-tablet} {
+  .banner-content {
+    grid-template-columns: auto !important;
+    column-gap: 0 !important;
+  }
+}
